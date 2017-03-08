@@ -18,22 +18,54 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *table;
+@property (nonatomic, copy) NSArray *datas;
 
 @end
 
 @implementation ViewController
 
+
+#pragma mark - ViewControllerLifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.datas = @[@"runtime",@"runloop",@"GCD",@"动画",@"KVO&&KVC",@"NSOperation",@"存储"];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.table deselectRowAtIndexPath:[self.table indexPathForSelectedRow] animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [self performSegueWithIdentifier:self.datas[indexPath.row] sender:nil];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.datas.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tableViewBaseCell"];
+    cell.textLabel.text = self.datas[indexPath.row];
+    return cell;
+}
+
 
 
 @end

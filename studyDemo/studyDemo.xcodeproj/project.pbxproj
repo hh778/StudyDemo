@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1096CAD1E6F9F85009851B6 /* HHRunTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CAC1E6F9F85009851B6 /* HHRunTimeManager.m */; };
+		F1096CB11E6FC9C8009851B6 /* HHRunTimeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CB01E6FC9C8009851B6 /* HHRunTimeRootViewController.m */; };
+		F1096CB41E6FCD41009851B6 /* HHRunTimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CB31E6FCD41009851B6 /* HHRunTimeTest.m */; };
+		F1096CB81E6FD17D009851B6 /* RunTimeTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CB71E6FD17D009851B6 /* RunTimeTestCell.m */; };
+		F1096CBC1E702968009851B6 /* HHMessageForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CBB1E702968009851B6 /* HHMessageForwardViewController.m */; };
+		F1096CBF1E7053BC009851B6 /* forwardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CBE1E7053BC009851B6 /* forwardTest.m */; };
+		F1096CC51E705948009851B6 /* subForwardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CC41E705948009851B6 /* subForwardTest.m */; };
 		F17AF2881E6F0EFA00608536 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AF2871E6F0EFA00608536 /* main.m */; };
 		F17AF28B1E6F0EFA00608536 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AF28A1E6F0EFA00608536 /* AppDelegate.m */; };
 		F17AF28E1E6F0EFA00608536 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AF28D1E6F0EFA00608536 /* ViewController.m */; };
@@ -17,6 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1096CAB1E6F9F85009851B6 /* HHRunTimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRunTimeManager.h; sourceTree = "<group>"; };
+		F1096CAC1E6F9F85009851B6 /* HHRunTimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRunTimeManager.m; sourceTree = "<group>"; };
+		F1096CAF1E6FC9C8009851B6 /* HHRunTimeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRunTimeRootViewController.h; sourceTree = "<group>"; };
+		F1096CB01E6FC9C8009851B6 /* HHRunTimeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRunTimeRootViewController.m; sourceTree = "<group>"; };
+		F1096CB21E6FCD41009851B6 /* HHRunTimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRunTimeTest.h; sourceTree = "<group>"; };
+		F1096CB31E6FCD41009851B6 /* HHRunTimeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRunTimeTest.m; sourceTree = "<group>"; };
+		F1096CB61E6FD17D009851B6 /* RunTimeTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeTestCell.h; sourceTree = "<group>"; };
+		F1096CB71E6FD17D009851B6 /* RunTimeTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeTestCell.m; sourceTree = "<group>"; };
+		F1096CBA1E702968009851B6 /* HHMessageForwardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMessageForwardViewController.h; sourceTree = "<group>"; };
+		F1096CBB1E702968009851B6 /* HHMessageForwardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMessageForwardViewController.m; sourceTree = "<group>"; };
+		F1096CBD1E7053BC009851B6 /* forwardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwardTest.h; sourceTree = "<group>"; };
+		F1096CBE1E7053BC009851B6 /* forwardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forwardTest.m; sourceTree = "<group>"; };
+		F1096CC31E705948009851B6 /* subForwardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subForwardTest.h; sourceTree = "<group>"; };
+		F1096CC41E705948009851B6 /* subForwardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subForwardTest.m; sourceTree = "<group>"; };
 		F17AF2831E6F0EFA00608536 /* studyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17AF2871E6F0EFA00608536 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F17AF2891E6F0EFA00608536 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +62,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1096CAE1E6FC997009851B6 /* RunTimeManager */ = {
+			isa = PBXGroup;
+			children = (
+				F1096CAB1E6F9F85009851B6 /* HHRunTimeManager.h */,
+				F1096CAC1E6F9F85009851B6 /* HHRunTimeManager.m */,
+			);
+			name = RunTimeManager;
+			sourceTree = "<group>";
+		};
+		F1096CB51E6FD155009851B6 /* RunTimeTest */ = {
+			isa = PBXGroup;
+			children = (
+				F1096CB21E6FCD41009851B6 /* HHRunTimeTest.h */,
+				F1096CB31E6FCD41009851B6 /* HHRunTimeTest.m */,
+				F1096CB61E6FD17D009851B6 /* RunTimeTestCell.h */,
+				F1096CB71E6FD17D009851B6 /* RunTimeTestCell.m */,
+			);
+			name = RunTimeTest;
+			sourceTree = "<group>";
+		};
+		F1096CB91E702941009851B6 /* MessageForward */ = {
+			isa = PBXGroup;
+			children = (
+				F1096CBA1E702968009851B6 /* HHMessageForwardViewController.h */,
+				F1096CBB1E702968009851B6 /* HHMessageForwardViewController.m */,
+				F1096CBD1E7053BC009851B6 /* forwardTest.h */,
+				F1096CBE1E7053BC009851B6 /* forwardTest.m */,
+				F1096CC31E705948009851B6 /* subForwardTest.h */,
+				F1096CC41E705948009851B6 /* subForwardTest.m */,
+			);
+			name = MessageForward;
+			sourceTree = "<group>";
+		};
 		F17AF27A1E6F0EFA00608536 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +114,9 @@
 		F17AF2851E6F0EFA00608536 /* studyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F17AF2A21E6F1A2800608536 /* GCD */,
+				F17AF2A11E6F1A1E00608536 /* RunLoop */,
+				F17AF2A01E6F19EC00608536 /* RunTime */,
 				F17AF2891E6F0EFA00608536 /* AppDelegate.h */,
 				F17AF28A1E6F0EFA00608536 /* AppDelegate.m */,
 				F17AF28C1E6F0EFA00608536 /* ViewController.h */,
@@ -80,6 +137,32 @@
 				F17AF2871E6F0EFA00608536 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F17AF2A01E6F19EC00608536 /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				F1096CB91E702941009851B6 /* MessageForward */,
+				F1096CAE1E6FC997009851B6 /* RunTimeManager */,
+				F1096CB51E6FD155009851B6 /* RunTimeTest */,
+				F1096CAF1E6FC9C8009851B6 /* HHRunTimeRootViewController.h */,
+				F1096CB01E6FC9C8009851B6 /* HHRunTimeRootViewController.m */,
+			);
+			name = RunTime;
+			sourceTree = "<group>";
+		};
+		F17AF2A11E6F1A1E00608536 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RunLoop;
+			sourceTree = "<group>";
+		};
+		F17AF2A21E6F1A2800608536 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1096CB81E6FD17D009851B6 /* RunTimeTestCell.m in Sources */,
 				F17AF2941E6F0EFB00608536 /* studyDemo.xcdatamodeld in Sources */,
 				F17AF28E1E6F0EFA00608536 /* ViewController.m in Sources */,
+				F1096CBF1E7053BC009851B6 /* forwardTest.m in Sources */,
 				F17AF28B1E6F0EFA00608536 /* AppDelegate.m in Sources */,
+				F1096CBC1E702968009851B6 /* HHMessageForwardViewController.m in Sources */,
 				F17AF2881E6F0EFA00608536 /* main.m in Sources */,
+				F1096CC51E705948009851B6 /* subForwardTest.m in Sources */,
+				F1096CB41E6FCD41009851B6 /* HHRunTimeTest.m in Sources */,
+				F1096CAD1E6F9F85009851B6 /* HHRunTimeManager.m in Sources */,
+				F1096CB11E6FC9C8009851B6 /* HHRunTimeRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +404,7 @@
 				F17AF29F1E6F0EFB00608536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

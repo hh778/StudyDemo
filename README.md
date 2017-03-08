@@ -1,6 +1,7 @@
 # StudyDemo
 知识整理
-day1.关于应用生命周期和视图控制器的生命周期
+
+## day1.关于应用生命周期和视图控制器的生命周期
     应用生命周期主要体现在appDelegate中的众多回调方法上，大体如下：
     1.将要加载完成:willFinishLaunching
     2.加载完成:didFinishLauching
@@ -28,3 +29,60 @@ day1.关于应用生命周期和视图控制器的生命周期
     6.viewDidDisappear 视图控制器已经不显示
   
     当AB两个视图控制器进行切换时，例如已显示A视图，再展示B视图，则依次为A视图控制器将要消失，B视图控制器将要出现(如果是初次加载，需要有加载过程)，A视图控制器已经消失，B视图控制器已经出现。
+    
+    
+## day2.runtime && 消息转发
+
+### runtime
+
+    runtime里可以看到对于class的定义，每个class里包含一个isa指针，指向类对象；同时还包含父类名，本类名，成员变量列表，方法列表，方法缓存，协议列表 等信息。以便于在运行时，进行相关信息的查找，匹配。
+ 
+    struct objc_class {
+    Class isa  OBJC_ISA_AVAILABILITY;
+ 
+    #if !__OBJC2__
+    Class super_class                                        OBJC2_UNAVAILABLE;
+    const char *name                                         OBJC2_UNAVAILABLE;
+    long version                                             OBJC2_UNAVAILABLE;
+    long info                                                OBJC2_UNAVAILABLE;
+    long instance_size                                       OBJC2_UNAVAILABLE;
+    struct objc_ivar_list *ivars                             OBJC2_UNAVAILABLE;
+    struct objc_method_list **methodLists                    OBJC2_UNAVAILABLE;
+    struct objc_cache *cache                                 OBJC2_UNAVAILABLE;
+    struct objc_protocol_list *protocols                     OBJC2_UNAVAILABLE;
+     #endif
+ 
+    } OBJC2_UNAVAILABLE;
+    
+    相应方法(部分)<br>
+    获取类名：object_getClassName(id obj);<br>
+    获取成员列表：class_copyIvarList(Class cls,unsigned int *outCount);<br>
+    获取方法列表：class_copyMethodList(Class cls,unsigned int *outCount);类方法时，第一个参数需要传入object_getClass(cls)<br>
+    获取属性列表：class_copyPropertyList(Class cls,unsigned int *outCount);<br>
+    获取协议列表：class_copyProtocolList(Class cls,unsigned int *outCount);<br>
+    添加方法：class_addMethod(Class cls, SEL name, IMP imp,const char *types);<br>
+    方法互换：method_exchangeImplementations(Method m1, Method m2);<br>
+    方法替换：class_replaceMethod(Class cls, SEL name, IMP imp,const char *types);<br>
+    关联属性：objc_setAssociatedObject(id object, const void *key);<br>
+    取消关联：objc_removeAssociatedObjects(id object);<br>
+    获得关联的属性：objc_getAssociatedObject(id object, const void *key);<br>
+    具体可以在使用过程中，动态对类或实体进行增加方法，关联属性，方法替换，互换等操作。<br>
+    
+### 消息转发
+    
+    oc里当调用方法发送消息时，会调用objc_msgSend方法，它会现在objc的方法缓存中查找方法，如果没有就在方法列表中查找，
+    如果没有就向父类中查找，如果找到了就执行相应IMP，如果到最后都没有找到的话，就意味着没有对应的方法可提供响应，
+    这时候就会进入到动态决议和消息转发阶段，依次会经过三个判断，来进行补救(1，2，3),如果还是无果，则会进入4，程序会直接崩溃
+    
+    1.+ (BOOL)resolveInstanceMethod:(SEL)sel 实例方法
+    + (BOOL)resolveClassMethod:(SEL)sel 类方法
+    可以动态添加方法来解决，如果返回NO 将进入下一步
+    2.- (id)forwardingTargetForSelector:(SEL)aSelector 将消息转发给其他对象，如果返回的是self或nil 将会进入下一步
+    3.- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
+    进行方法签名获取，如果签名不为空，则调取下面的方法，进行转发(可转发给多个对象)，如果为空，则调取4
+    - (void)forwardInvocation:(NSInvocation *)anInvocation
+    4.- (void)doesNotRecognizeSelector:(SEL)aSelector
+
+    
+    
+    

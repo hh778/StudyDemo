@@ -14,6 +14,11 @@
 		F1096CBC1E702968009851B6 /* HHMessageForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CBB1E702968009851B6 /* HHMessageForwardViewController.m */; };
 		F1096CBF1E7053BC009851B6 /* forwardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CBE1E7053BC009851B6 /* forwardTest.m */; };
 		F1096CC51E705948009851B6 /* subForwardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1096CC41E705948009851B6 /* subForwardTest.m */; };
+		F11E4C601E76C86C00D9AEDD /* HHResponderLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F11E4C5F1E76C86C00D9AEDD /* HHResponderLinkViewController.m */; };
+		F11E4C671E76DB3B00D9AEDD /* HHResponderAView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11E4C661E76DB3B00D9AEDD /* HHResponderAView.m */; };
+		F11E4C6A1E76DB4800D9AEDD /* HHResponderBView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11E4C691E76DB4800D9AEDD /* HHResponderBView.m */; };
+		F11E4C6D1E76DB5500D9AEDD /* HHResponderCView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11E4C6C1E76DB5500D9AEDD /* HHResponderCView.m */; };
+		F11E4C701E76DB6200D9AEDD /* HHResponderDView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11E4C6F1E76DB6200D9AEDD /* HHResponderDView.m */; };
 		F17AF2881E6F0EFA00608536 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AF2871E6F0EFA00608536 /* main.m */; };
 		F17AF28B1E6F0EFA00608536 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AF28A1E6F0EFA00608536 /* AppDelegate.m */; };
 		F17AF28E1E6F0EFA00608536 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17AF28D1E6F0EFA00608536 /* ViewController.m */; };
@@ -38,6 +43,16 @@
 		F1096CBE1E7053BC009851B6 /* forwardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = forwardTest.m; sourceTree = "<group>"; };
 		F1096CC31E705948009851B6 /* subForwardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subForwardTest.h; sourceTree = "<group>"; };
 		F1096CC41E705948009851B6 /* subForwardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subForwardTest.m; sourceTree = "<group>"; };
+		F11E4C5E1E76C86C00D9AEDD /* HHResponderLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHResponderLinkViewController.h; sourceTree = "<group>"; };
+		F11E4C5F1E76C86C00D9AEDD /* HHResponderLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHResponderLinkViewController.m; sourceTree = "<group>"; };
+		F11E4C651E76DB3B00D9AEDD /* HHResponderAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHResponderAView.h; sourceTree = "<group>"; };
+		F11E4C661E76DB3B00D9AEDD /* HHResponderAView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHResponderAView.m; sourceTree = "<group>"; };
+		F11E4C681E76DB4800D9AEDD /* HHResponderBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHResponderBView.h; sourceTree = "<group>"; };
+		F11E4C691E76DB4800D9AEDD /* HHResponderBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHResponderBView.m; sourceTree = "<group>"; };
+		F11E4C6B1E76DB5500D9AEDD /* HHResponderCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHResponderCView.h; sourceTree = "<group>"; };
+		F11E4C6C1E76DB5500D9AEDD /* HHResponderCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHResponderCView.m; sourceTree = "<group>"; };
+		F11E4C6E1E76DB6200D9AEDD /* HHResponderDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHResponderDView.h; sourceTree = "<group>"; };
+		F11E4C6F1E76DB6200D9AEDD /* HHResponderDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHResponderDView.m; sourceTree = "<group>"; };
 		F17AF2831E6F0EFA00608536 /* studyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17AF2871E6F0EFA00608536 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F17AF2891E6F0EFA00608536 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +110,31 @@
 			name = MessageForward;
 			sourceTree = "<group>";
 		};
+		F11E4C5D1E76C80500D9AEDD /* Responder Link */ = {
+			isa = PBXGroup;
+			children = (
+				F11E4C611E76D9D800D9AEDD /* Responder */,
+				F11E4C5E1E76C86C00D9AEDD /* HHResponderLinkViewController.h */,
+				F11E4C5F1E76C86C00D9AEDD /* HHResponderLinkViewController.m */,
+			);
+			name = "Responder Link";
+			sourceTree = "<group>";
+		};
+		F11E4C611E76D9D800D9AEDD /* Responder */ = {
+			isa = PBXGroup;
+			children = (
+				F11E4C651E76DB3B00D9AEDD /* HHResponderAView.h */,
+				F11E4C661E76DB3B00D9AEDD /* HHResponderAView.m */,
+				F11E4C681E76DB4800D9AEDD /* HHResponderBView.h */,
+				F11E4C691E76DB4800D9AEDD /* HHResponderBView.m */,
+				F11E4C6B1E76DB5500D9AEDD /* HHResponderCView.h */,
+				F11E4C6C1E76DB5500D9AEDD /* HHResponderCView.m */,
+				F11E4C6E1E76DB6200D9AEDD /* HHResponderDView.h */,
+				F11E4C6F1E76DB6200D9AEDD /* HHResponderDView.m */,
+			);
+			name = Responder;
+			sourceTree = "<group>";
+		};
 		F17AF27A1E6F0EFA00608536 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +154,7 @@
 		F17AF2851E6F0EFA00608536 /* studyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F11E4C5D1E76C80500D9AEDD /* Responder Link */,
 				F17AF2A21E6F1A2800608536 /* GCD */,
 				F17AF2A11E6F1A1E00608536 /* RunLoop */,
 				F17AF2A01E6F19EC00608536 /* RunTime */,
@@ -241,11 +282,16 @@
 				F17AF2941E6F0EFB00608536 /* studyDemo.xcdatamodeld in Sources */,
 				F17AF28E1E6F0EFA00608536 /* ViewController.m in Sources */,
 				F1096CBF1E7053BC009851B6 /* forwardTest.m in Sources */,
+				F11E4C6A1E76DB4800D9AEDD /* HHResponderBView.m in Sources */,
+				F11E4C701E76DB6200D9AEDD /* HHResponderDView.m in Sources */,
 				F17AF28B1E6F0EFA00608536 /* AppDelegate.m in Sources */,
 				F1096CBC1E702968009851B6 /* HHMessageForwardViewController.m in Sources */,
 				F17AF2881E6F0EFA00608536 /* main.m in Sources */,
 				F1096CC51E705948009851B6 /* subForwardTest.m in Sources */,
 				F1096CB41E6FCD41009851B6 /* HHRunTimeTest.m in Sources */,
+				F11E4C671E76DB3B00D9AEDD /* HHResponderAView.m in Sources */,
+				F11E4C601E76C86C00D9AEDD /* HHResponderLinkViewController.m in Sources */,
+				F11E4C6D1E76DB5500D9AEDD /* HHResponderCView.m in Sources */,
 				F1096CAD1E6F9F85009851B6 /* HHRunTimeManager.m in Sources */,
 				F1096CB11E6FC9C8009851B6 /* HHRunTimeRootViewController.m in Sources */,
 			);

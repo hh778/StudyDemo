@@ -34,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.datas = @[@"runtime",@"runloop",@"GCD",@"动画",@"KVO&&KVC",@"NSOperation",@"存储"];
+    self.datas = @[@"runtime",@"runloop",@"GCD",@"动画",@"KVO&&KVC",@"NSOperation",@"存储",@"响应者链"];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
